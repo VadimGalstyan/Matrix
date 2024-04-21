@@ -38,6 +38,12 @@ Matrix& operator =(const Matrix& obj){
         return *this;
     }
     
+
+     for(int i = 0;i < row; ++i){
+	     delete [] matrix[i];
+     }
+     delete [] matrix;
+
      this->row = obj.row;
      this->column = obj.column;
 
